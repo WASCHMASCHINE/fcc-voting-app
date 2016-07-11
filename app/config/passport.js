@@ -19,8 +19,8 @@ module.exports = function(passport){
     });
     
     passport.use(new TwitterStrategy({
-            consumerKey: process.env.TWITTER_CONSUMER_KEY,
-            consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
+            consumerKey: "1OL5rtEQwFf01FPVjmu7PVM0",//process.env.TWITTER_CONSUMER_KEY,
+            consumerSecret:"7hQSscmx17LH8fnkGF2zTJVYmsEXnq89QUV2mPcHR2RTWZdRz6", //process.env.TWITTER_CONSUMER_SECRET,
             callbackURL: process.env.APP_URL + "auth/twitter/callback"
         },
         function(token, tokenSecret, profile, done){
