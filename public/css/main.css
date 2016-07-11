@@ -13,3 +13,72 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.answerText {
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
+.list-group-item {
+ /*   display: relative;
+    width: 80%;*/
+   line-height: 35px;
+}
+
+.answerPercent {
+    width: 50px;
+    padding-left: 5px;
+    margin-right: 20px;
+    
+    text-align: right;
+}
+
+.btn {
+    color: white;
+}
+
+.color0 {
+    background-color: #468966;
+}
+
+.color1 {
+    background-color: #004358;
+}
+
+.color2 {
+    background-color: #FFB03B;
+}
+
+.color3 {
+    background-color: #B64926;
+}
+
+.color4 {
+    background-color: #8E2800;
+}
+
+.color5 {
+    background-color: #1F8A70;
+}
+
+.color6 {
+    background-color: #5E3957;
+}
+
+.color7 {
+    background-color: #FD7400;
+}
+
+
+
+/*
+#answersDiv {
+    background-color: red;
+}
+
+#answersVizDiv {
+    background-color: green;
+}
+*/

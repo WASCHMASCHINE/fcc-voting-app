@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FCC Voting App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a id="navbar-name" class="navbar-brand" href="/#"></a>
+    </div>
+    <ul id="navbar-menu" class="nav navbar-nav">
+      <li class="active"><a href="/polls">Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 id="question">Loading question..</h2>
+      <div id="answersDiv">
+        <!-- gets filled -->
+      </div>
+      <br>
+      <div class="form-group">
+        <button id="addOptionButton" class="btn btn-primary col-sm-1">+</button>
+        <div class="col-sm-5">
+          <input id="addOptionForm" type="text" class="form-control" placeholder="Add another option (login required)"/>
+        </div>
+      </div>
+      
+      <br><br>
+      <div id="answersVizDiv" class="progress">
+      </div>
+      <a href="https://twitter.com/intent/" id="customTweetButton" class="fa fa-twitter"> Tweet this poll</a>
+    <div id="poll_loader" class="loader"></div>
+  </div>
+</div>
+<script type="text/javascript" src="../common/util.js"></script>
+<script type="text/javascript" src="../controllers/navbarUpdater.client.js"></script>
+<script type="text/javascript" src="../controllers/showSinglePoll.client.js"></script>
+</body>
+</html>
